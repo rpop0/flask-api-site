@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "monthly-spending-334222",
+  "private_key_id": "4c36bd281ec715d6ac21596d90dd561f0cd1b3d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDM3m7fSXk/piAz\nIB7mScJut56a63XFk8qPTpvN3WkB7yrJg5DE/9PJ/DrBPyFoSBTJpC0KrcO76KOw\nzdLvVZ6g4Wp6EHXNUIokRw3/Z8DRjXa4ZHhei4AFb95sB36hMBhGDQIDPDVlj/+N\n504KU1HKtPjc9HIZCTwWg502a+0L2tjPP8H2s26OFdo0RkkRQ8wrEFkyjGy5X6kp\naUkeAOPJbdNkCqRZqQorJ4PTzi7ptdJk8bbvx6Qj72j/vyEbSEipo20Jetj/VoUn\nBdyCf9o6eV1T/hsNsSfaTwrrcFfblHQ2PWKRofnJMw20VW4ibR74V2xsslvzkDGZ\noVsmEvN5AgMBAAECggEAKaFrq1ENY/s4oNr+nHJRodkLUFTXplIdf9iL/Z3n+D4n\nFjL3iKip22o3cEyJV90J6F3Fz103IKiqFsQEgKEH7o5P6kUNAy9CGxQbSpLFUm/q\nN5cnBKNZXQF6E77EIzIYRKfhCFJEUYKc/jOKHrwGq2fyCEheJStEvBh7qnLtBRLS\niUnEmSoEgKOfl+H3U6aF7ilKqYMXMmLmekbyiE5Nf1TZwB1YFMH4/rddFh7owvu+\nMd/KgwwkJAMPtWHq0Q8rWd0YrnLuVNDIzwvTx0qdmBzuDvYQIyAG79Y9qMPabLU4\nwewIwRxkPek79QcxsF7gSYIHgKK+c0OUvG9btVNp/wKBgQD/eOQon84MBEgz8ayq\ndqAwd38dwmzV8ey9xClll4Hd0MN1KKbf1Di9N0aFX/9UPlFU/5Uga5GGSONpV+Zj\nbGFXJWvi7y80mjmF40TH2RUO0gdDVwImIkYEUSFSxYm+1P+7v3ea3Az4l2weLULG\notGfvQpbCnUC3oMhqfE5Z+2uTwKBgQDNSseiKf1Bp5Yv57Qr/s1x9JzzrtVAEzHQ\nfWAq5RXUhxSrM2uHqOnSjDQKVRcMOl8wxYFB98uZbTkU4PSK/jmzDR94u+jDoJiY\n9ssDPl4F7+YeGp+bvcVP2NqSMUVVdM+5xygmSGc3/i743WjHKrVjGeyUJ0nBMWKG\n5X0N0wnXtwKBgD3FFzWTXhiduG+G0b7tq9HMMtoZNoOMWTeRBIlh1q6xWXEsgRzB\njW6CvPRmv6+42aV5nq8WEzuqyAGilTwY6nhNvgZC2uEXIS10RB8mJ+dLdSIdGZHq\n248TpsECrkmL6sGUi/DPn/tDcYriWrD4kULUTHqyzpQBBSfQlVjR/jAVAoGAdPqH\nhwAmL6MvEV0WbXtj1ettA+471acaW5MVmVuwdMoEHQnP3B2EH1WE0d5qo60fUMs6\nPDzW5zY1sI/+yLTUbBKuPD3XBKIeUgtO4ypGqVtp5P2GtVgNdtI6udMZjvhg5Zt2\nZVocduuAGI8RhWvwr+e1xzYb8NoTKoraF2aJ1UECgYEAkzeAI0JPmKxBBXxlwPzO\nu9FmrSaLgZ/4KRJH4PClObesOVIDcWel2ofoZQ8DZh6jdb0uDIwEAKDHi8gSRh2c\nrzrc8ICvO8/1RnOCRSIW9ZBGBXJsc3Qafl1ZQd7q7PoYELH+PEZva0Y/HfHKwGwJ\nT2wLhA0gCoGX/O/CZZSVDIA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "monthly-spending@monthly-spending-334222.iam.gserviceaccount.com",
+  "client_id": "104088418513870231327",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monthly-spending%40monthly-spending-334222.iam.gserviceaccount.com"
+}
