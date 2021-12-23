@@ -1,9 +1,15 @@
+import certifi
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
+from flask_pymongo import PyMongo
 from scripts.sheet_adder import SheetInterface
+from datetime import datetime
 
 app = Flask(__name__)
 api = Api(app)
+mongodb_client = PyMongo(app, uri="mongodb+srv://monthly-spending:monthly-spending@cluster0.itj78.mongodb.net"
+                                  "/monthly_spending?retryWrites=true&w=majority", tlsCAFile=certifi.where())
+db = mongodb_client.db
 
 
 class Income(Resource):
@@ -49,6 +55,8 @@ class Expense(Resource):
         status = sheet_interface.add_expense(args['amount'], args['expense_text'], args['type'])
         if status == 1:
             return {'found': False}, 204
+        db.spendings.insert_one({'year': datetime.now().year, 'month': datetime.now().month,' amount': args['amount'],
+                                 'expense_text': args['expense_text'], 'type': args['type']})
         return {'ok': True}, 200
 
 

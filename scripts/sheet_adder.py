@@ -2,8 +2,6 @@ from datetime import datetime
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from config import service_account_path
-from documents import Spending, mongo_host
-import mongoengine
 
 
 class SheetInterface:
@@ -67,13 +65,6 @@ class SheetInterface:
         request = sheet.values().append(spreadsheetId=self.sheet_id, range=sheet_range, valueInputOption="USER_ENTERED",
                                         body=request_body)
         request.execute()
-        try:
-            mongoengine.connect(host=mongo_host, alias='db')
-            spending = Spending(spending_text=expense_text, amount=amount, category=expense_type)
-            spending.save()
-            mongoengine.disconnect('db')
-        except mongoengine.errors.__all__ as e:
-            print(e)
         return 0
 
     def add_income(self, amount, income_text, income_type):
