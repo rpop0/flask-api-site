@@ -56,6 +56,8 @@ class SheetInterface:
         :param expense_type: String representing the type of the expense (Food, etc)
         :return: Returns 0
         """
+        if self.sheet_id is None:
+            return 1
         service = build('sheets', 'v4', credentials=self.credentials)
         sheet_range = 'Transactions!B5:E223'
         # Builds the body, containing the info which will be sent to the sheets
@@ -75,6 +77,8 @@ class SheetInterface:
         :param income_type: String representing the type of the expense (Food, etc)
         :return: Returns 0
         """
+        if self.sheet_id is None:
+            return 1
         service = build('sheets', 'v4', credentials=self.credentials)
         sheet_range = 'Transactions!G5:J223'
         # Builds the body, containing the info which will be sent to the sheets
