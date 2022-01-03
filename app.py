@@ -4,11 +4,12 @@ from flask_restful import Resource, Api, reqparse
 from flask_pymongo import PyMongo
 from scripts.sheet_adder import SheetInterface
 from datetime import datetime
+import settings
+
 
 app = Flask(__name__)
 api = Api(app)
-mongodb_client = PyMongo(app, uri="mongodb+srv://monthly-spending:monthly-spending@cluster0.itj78.mongodb.net"
-                                  "/monthly_spending?retryWrites=true&w=majority", tlsCAFile=certifi.where())
+mongodb_client = PyMongo(app, uri=settings.MONGO_URI, tlsCAFile=certifi.where())
 db = mongodb_client.db
 
 
@@ -78,4 +79,4 @@ api.add_resource(Expense, '/api/expense/')
 api.add_resource(Value, '/api/value/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

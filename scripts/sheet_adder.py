@@ -1,7 +1,7 @@
 from datetime import datetime
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
-from config import service_account_path
+import settings
 
 
 class SheetInterface:
@@ -11,7 +11,8 @@ class SheetInterface:
         # Creates the credential using the service account file.
         service_acc_file = './monthly-spending-334222-4c36bd281ec7.json'
         scopes = ['https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/spreadsheets']
-        self.credentials = service_account.Credentials.from_service_account_file(service_acc_file, scopes=scopes)
+        self.credentials = service_account.Credentials.from_service_account_info(settings.GOOGLE_CLOUD_KEY,
+                                                                                 scopes=scopes)
         # Grabs the sheet ID using the Google Drive API
         self.get_sheet_id_from_drive()
 
